@@ -1,0 +1,11 @@
+#!name= Change Emby User-Agent
+#!desc= 修改Emby站点的ua.
+#!author= Ren
+#!homepage= https://github.com/chiupam/surge/tree/main/Loon
+#!icon= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+
+[URL Rewrite]
+^https?:\/\/.*\.makima\.online header-replace-regex User-Agent .* "SenPlayer/5.0.0 (iPhone; iOS 18.0.1; Scale/3.00)"
+^https?:\/\/.*\.fmta\.boo header-replace-regex User-Agent .* "SenPlayer/5.0.0 (iPhone; iOS 18.0.1; Scale/3.00)"
+[Mitm]
+hostname = *.makima.online,*.fmta.boo
